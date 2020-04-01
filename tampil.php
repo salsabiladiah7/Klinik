@@ -12,12 +12,15 @@
 <body>
     
     <center><h1>DATA KLIEN</h1>
-        <table bgcolor="#aed9da" border="1" width="90%"></center>
+        <table bgcolor="#aed9da" border="1" width="95%"></center>
             <tr>
                 <th bgcolor="#2096ba">NAMA</th>
                 <th bgcolor="#2096ba">NO.TELP</th>
                 <th bgcolor="#2096ba">EMAIL</th>
+                <th bgcolor="#2096ba">HARI</th>
+                <th bgcolor="#2096ba">JAM</th>
                 <th bgcolor="#2096ba">PESAN</th>
+                <th bgcolor="#2096ba">STATUS</th>
                 <th bgcolor="#2096ba">OPSI</th>
             </tr>
             <?php
@@ -29,7 +32,10 @@
                     echo "<td>".$data['namaa']."</td>";
                     echo "<td>".$data['telpp']."</td>";
                     echo "<td>".$data['email']."</td>";
+                    echo "<td>".$data['hari']."</td>";
+                    echo "<td>".$data['jam']."</td>";
                     echo "<td>".$data['pesan']."</td>";
+                    echo "<td>".$data['ket']."</td>";
                     echo "<td><a href='form_update.php?id_pemesanan=".$data['id_pemesanan']."'> EDIT</a></td>";
                 }
             ?>

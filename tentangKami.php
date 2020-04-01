@@ -22,13 +22,13 @@
         <a class="nav-link" href="tentangKami.php"><h6> TENTANG KAMI </h6></a>
         </li>   
         <li class="nav-item">
-        <a class="nav-link" href="#"><h6> JADWAL PRAKTEK </h6></a>
+        <a class="nav-link" href="jadwalPraktek.php"><h6> JADWAL PRAKTEK </h6></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#"><h6> LAYANAN & TARIF </h6></a>
+        <a class="nav-link" href="layanan.php"><h6> LAYANAN & TARIF </h6></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#"><h6> HUBUNGI KAMI </h6></a>
+        <a class="nav-link" href="hubungi.php"><h6> HUBUNGI KAMI </h6></a>
         </li>
     </ul>
     </div>  
@@ -36,7 +36,7 @@
 </nav>
 
 <div class="jumbotron text-center bg-info">
-<h1 class="t display-3" style="color:white">TENTANG KAMI</h1>
+<h1 class="judul display-3" style="color:white">Tentang Kami</h1>
 </div>
 <br>
 <div class="container">
@@ -69,7 +69,14 @@
             <h5 class="text-center" style="color:white">FASILITAS</h5>
         </div>
         <div class="card-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p class="text-center">- Dokter Umum</p>
+            <p class="text-center">- Laboratorium</p>
+            <p class="text-center">- Apotek</p>
+            <p class="text-center">- Ruang tunggu full AC/free wifi</p>
+            <p class="text-center">- Tempat bermain anak</p>
+            <p class="text-center">- Tempat perkir luas</p>
+            <p class="text-center">- Kafetaria (kantin)</p>
+            <p class="text-center">- Layanan Ambulance 24 jam</p>
         </div>
         <div class="card-footer bg-info"></div>
     </div>

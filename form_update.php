@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="emaik">E-mail:</label>
+                <label for="email">E-mail:</label>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="E-mail" id="mail" name="email" value="<?php echo $row['email'];?>">
                     <div class="input-group-append">
@@ -47,11 +47,24 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="comment">Pesan:</label>
-                <textarea class="form-control" rows="6" id="comment" name="pesan" value="<?php echo $row['pesan'];?>"></textarea>
+                <label for="hari">Hari Periksa:</label>
+                <input type="text" class="form-control" id="hari" placeholder="Hari, DD-MM-YY" name="hari" value="<?php echo $row['hari'];?>">
             </div>
+            <div class="form-group">
+                <label for="jam">Jam Periksa:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="jam" placeholder="00.00" name="jam" value="<?php echo $row['jam'];?>">
+                    <div class="input-group-append">
+                        <span class="input-group-text">WIB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Pesan (keluhan):</label>
+                <textarea class="form-control" rows="6" id="comment" name="pesan"><?php echo $row['pesan'];?></textarea>
+            </div>
+            <td><input type="hidden" name="id_pemesanan" value="<?php echo $row['id_pemesanan'];?>" class="form-control"></td>
             <a href="tampil.php" class="btn btn-secondary"> BACK </a>
-            <td><input type="hidden" name="id_pemesanan" value="<?php echo $row['id_pemesanan'];?>"></td>
             <button type="submit" class="btn btn-primary float-right"> KIRIM </button><br><br>
         </form>
     </div>

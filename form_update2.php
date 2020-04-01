@@ -10,14 +10,23 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+    include 'koneksi.php';
+    $id = $_GET['id_pemesanan'];
+
+    $sql="SELECT*FROM pesanan WHERE id_pemesanan='$id'";
+    $query=mysqli_query($connect,$sql);
+    $row=mysqli_fetch_assoc($query);
+?>
+
 <div class="container">
 <br>
-<center><h3 style="color:#edfefd">FORM DATA PESAN</h3></center>
+<center><h3 style="color:#edfefd">FORM UPDATE</h3></center>
     <div class="card mx-auto" style="width:450px">
-        <form action="tambah_pesan.php" method="POST" style="background-color:#edfefd">
+        <form action="update2.php" method="POST" style="background-color:#edfefd">
             <div class="form-group">
                 <label for="uname">Nama:</label>
-                <input type="text" class="form-control" id="uname" placeholder="Nama Lengkap" name="namaa">
+                <input type="text" class="form-control" id="uname" placeholder="Nama Lengkap" name="namaa" value="<?php echo $row['namaa'];?>">
             </div>
             <div class="form-group">
                 <label for="telpp">No.Telp:</label>
@@ -25,13 +34,13 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text">+62</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Nomor Telepon" id="telpp" name="telpp">
+                    <input type="text" class="form-control" placeholder="Nomor Telepon" id="telpp" name="telpp" value="<?php echo $row['telpp'];?>">
                 </div>
             </div>
             <div class="form-group">
-                <label for="emaik">E-mail:</label>
+                <label for="email">E-mail:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="E-mail" id="mail" name="email">
+                    <input type="text" class="form-control" placeholder="E-mail" id="mail" name="email" value="<?php echo $row['email'];?>">
                     <div class="input-group-append">
                         <span class="input-group-text">@example.com</span>
                     </div>
@@ -39,12 +48,12 @@
             </div>
             <div class="form-group">
                 <label for="hari">Hari Periksa:</label>
-                <input type="text" class="form-control" id="hari" placeholder="Hari, DD-MM-YY" name="hari">
+                <input type="text" class="form-control" id="hari" placeholder="Hari, DD-MM-YY" name="hari" value="<?php echo $row['hari'];?>">
             </div>
             <div class="form-group">
                 <label for="jam">Jam Periksa:</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="jam" placeholder="00.00" name="jam">
+                    <input type="text" class="form-control" id="jam" placeholder="00.00" name="jam" value="<?php echo $row['jam'];?>">
                     <div class="input-group-append">
                         <span class="input-group-text">WIB</span>
                     </div>
@@ -52,13 +61,17 @@
             </div>
             <div class="form-group">
                 <label for="comment">Pesan (keluhan):</label>
-                <textarea class="form-control" rows="6" id="comment" name="pesan"></textarea>
+                <textarea class="form-control" rows="6" id="comment" name="pesan"><?php echo $row['pesan'];?></textarea>
             </div>
-            <a href="customLog.php" class="btn btn-secondary"> BACK </a>
+            <div class="form-group">
+                <label for="ket">Keterangan:</label>
+                <input type="text" class="form-control" id="ket" placeholder="confirm/rejected" name="ket">
+            </div>
+            <td><input type="hidden" name="id_pemesanan" value="<?php echo $row['id_pemesanan'];?>" class="form-control"></td>
+            <a href="tampil.php" class="btn btn-secondary"> BACK </a>
             <button type="submit" class="btn btn-primary float-right"> KIRIM </button><br><br>
         </form>
     </div>
-    <a href="tampil.php" class="btn btn-link float-right" style="color:#edfefd"><h5>< Lihat Data Pesanan ></h5></a>
 <br>
 </div>
 
