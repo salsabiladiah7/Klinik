@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="admin.css";>
+    <link rel="stylesheet" type="text/css" href="adm.css";>
     <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/css//bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
@@ -13,7 +13,7 @@
     
     <center><h1>DATA KLIEN</h1>
         <table bgcolor="#aed9da" border="1" width="95%"></center>
-            <tr>
+            <tr style="text-align:center">
                 <th bgcolor="#2096ba">NAMA</th>
                 <th bgcolor="#2096ba">NO.TELP</th>
                 <th bgcolor="#2096ba">EMAIL</th>
@@ -21,7 +21,8 @@
                 <th bgcolor="#2096ba">JAM</th>
                 <th bgcolor="#2096ba">PESAN</th>
                 <th bgcolor="#2096ba">STATUS</th>
-                <th bgcolor="#2096ba">OPSI</th>
+                <th bgcolor="#2096ba">BIAYA</th>
+                <th colspan="2" bgcolor="#2096ba">OPSI</th>
             </tr>
             <?php
                 include 'koneksi.php';
@@ -36,7 +37,9 @@
                     echo "<td>".$data['jam']."</td>";
                     echo "<td>".$data['pesan']."</td>";
                     echo "<td>".$data['ket']."</td>";
+                    echo "<td>".$data['biaya']."</td>";
                     echo "<td><a href='form_update.php?id_pemesanan=".$data['id_pemesanan']."'> EDIT</a></td>";
+                    echo "<td><a href='form_bayar.php?id_pemesanan=".$data['id_pemesanan']."'> BAYAR</a></td>";
                 }
             ?>
         </table>

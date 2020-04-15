@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="login.css";>
+    <link rel="stylesheet" type="text/css" href="yaa.css";>
     <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/css//bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
@@ -32,7 +32,7 @@
                 <label for="uname">Password:</label>
                 <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd">
             </div>
-            <a href="login.php" class="btn btn-secondary"> BACK </a>
+            <a href="customer.php" class="btn btn-secondary"> BACK </a>
             <button type="submit" class="btn btn-primary float-right"> REGISTER </button><br><br>
         </form>
     </div>

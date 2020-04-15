@@ -1,16 +1,17 @@
 <?php
     include 'koneksi.php';
 
-    $id=$_POST['id_pemesanan'];
-    $nama=$_POST['namaa'];
-    $telp=$_POST['telpp'];
-    $email=$_POST['email'];
-    $hari=$_POST['hari'];
-    $jam=$_POST['jam'];
-    $pesan=$_POST['pesan'];
-    $ket=$_POST['ket'];
+    $id=$_GET['id_pemesanan'];
+    $nama=$_GET['namaa'];
+    $telp=$_GET['telpp'];
+    $email=$_GET['email'];
+    $hari=$_GET['hari'];
+    $jam=$_GET['jam'];
+    $pesan=$_GET['pesan'];
+    $biaya=$_GET['biaya'];
+    $ket=$_GET['ket'];
 
-    $sql= "UPDATE pesanan SET namaa='$nama', telpp='$telp', email='$email',hari='$hari',jam='$jam', pesan='$pesan',ket='$ket' WHERE id_pemesanan='$id'";
+    $sql= "UPDATE pesanan SET namaa='$nama', telpp='$telp', email='$email',hari='$hari',jam='$jam', pesan='$pesan', biaya='$biaya', ket='$ket' WHERE id_pemesanan='$id'";
     $query= mysqli_query($connect,$sql);
     $num = mysqli_affected_rows($connect);
     if($num>0){

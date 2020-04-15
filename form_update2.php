@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="login.css";>
+    <link rel="stylesheet" type="text/css" href="adm.css";>
     <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/css//bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
@@ -23,7 +23,7 @@
 <br>
 <center><h3 style="color:#edfefd">FORM UPDATE</h3></center>
     <div class="card mx-auto" style="width:450px">
-        <form action="update2.php" method="POST" style="background-color:#edfefd">
+        <form action="update2.php" method="GET" style="background-color:#edfefd">
             <div class="form-group">
                 <label for="uname">Nama:</label>
                 <input type="text" class="form-control" id="uname" placeholder="Nama Lengkap" name="namaa" value="<?php echo $row['namaa'];?>">
@@ -64,8 +64,12 @@
                 <textarea class="form-control" rows="6" id="comment" name="pesan"><?php echo $row['pesan'];?></textarea>
             </div>
             <div class="form-group">
+                <label for="biaya">Biaya Pengobatan:</label>
+                <input type="text" class="form-control" id="biaya" placeholder="BIAYA" name="biaya"  value="<?php echo $row['biaya'];?>">
+            </div>
+            <div class="form-group">
                 <label for="ket">Keterangan:</label>
-                <input type="text" class="form-control" id="ket" placeholder="confirm/rejected" name="ket">
+                <input type="text" class="form-control" id="ket" placeholder="confirm/rejected" name="ket"  value="<?php echo $row['ket'];?>">
             </div>
             <td><input type="hidden" name="id_pemesanan" value="<?php echo $row['id_pemesanan'];?>" class="form-control"></td>
             <a href="tampil.php" class="btn btn-secondary"> BACK </a>
