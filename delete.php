@@ -7,7 +7,7 @@
     $query=mysqli_query($connect,$sql);
     $num=mysqli_affected_rows($connect);
     if($num>0){
-        echo "Berhasil Hapus Data<br>";
+        header("location:admin3.php");
     }
     else{
         echo "Gagal Hapus Data<br>";

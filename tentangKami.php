@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="tentang.css";>
     <link rel="stylesheet" type="text/css" href="in.css";>
+    <link rel="stylesheet" type="text/css" href="di.css";>
     <link rel="stylesheet" href="./assets/bootstrap-4.4.1-dist/css//bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
@@ -35,7 +36,7 @@
     <a href="login.php" target='_blank' class="btn btn-secondary float-right">LOGIN</a>
 </nav>
 
-<div class="jumbotron text-center bg-info">
+<div class="jumbotron text-center bg">
 <h1 class="judul display-3" style="color:white">Tentang Kami</h1>
 </div>
 <br>
