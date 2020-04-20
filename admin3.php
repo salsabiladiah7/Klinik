@@ -38,14 +38,14 @@
                     echo "<td>".$data['pesan']."</td>";
                     echo "<td>".$data['ket']."</td>";
                     echo "<td>".$data['biaya']."</td>";
-                    echo "<td><a href='form_update2.php?id_pemesanan=".$data['id_pemesanan']."'> EDIT</a></td>";
-                    echo "<td><a href='delete.php?id_pemesanan=".$data['id_pemesanan']."'onlick='return confirm(\"Apakah anda yakin ingin menghapus data?\")'>DELETE</a></td>";
+                    echo "<td><a href='form_update2.php?id_pemesanan=".$data['id_pemesanan']."' class='btn btn-success'> EDIT</a></td>";
+                    echo "<td><a href='delete.php?id_pemesanan=".$data['id_pemesanan']."' class='btn btn-danger' onclick='return confirm(\"Apakah anda yakin ingin menghapus data?\")'>DELETE</a></td>";
                 }
             ?>
         </table>
         <br>
         <a href="admin1.php" class="btn btn-secondary float-left">BACK</a>
-        <a href="logout.php" class="btn btn-danger float-right">LOGOUT</a>
+        <a href="logout.php" class="btn btn-primary float-right">LOGOUT</a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="./asset/bootstrap-4.4.1-dist/js/bootsrtap.js"></script>

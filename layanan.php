@@ -41,6 +41,9 @@
         <li class="nav-item">
         <a class="nav-link" href="hubungi.php"><h6> HUBUNGI KAMI </h6></a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.php"><h6> PROFILE </h6></a>
+        </li>
     </ul>
     </div>  
     <a href="login.php" target='_blank' class="btn btn-secondary float-right">LOGIN</a>

@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<style>
+    .container{
+        width: 40%;
+        margin-top: 3%;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+        padding: 40px;
+        background: #7dc9e7;
+    }
+    button{
+        width: 49%;
+    }
+    a{
+        width: 49%;
+    }
+</style>
 <body>
 <?php
     include 'koneksi.php';
@@ -20,10 +35,8 @@
 ?>
 
 <div class="container">
-<br>
 <center><h3 style="color:#edfefd">FORM UPDATE</h3></center>
-    <div class="card mx-auto" style="width:450px">
-        <form action="update2.php" method="GET" style="background-color:#edfefd">
+        <form action="update2.php" method="GET">
             <div class="form-group">
                 <label for="uname">Nama:</label>
                 <input type="text" class="form-control" id="uname" placeholder="Nama Lengkap" name="namaa" value="<?php echo $row['namaa'];?>">
@@ -73,11 +86,10 @@
             </div>
             <td><input type="hidden" name="id_pemesanan" value="<?php echo $row['id_pemesanan'];?>" class="form-control"></td>
             <a href="tampil.php" class="btn btn-secondary"> BACK </a>
-            <button type="submit" class="btn btn-primary float-right"> KIRIM </button><br><br>
+            <button type="submit" class="btn btn-primary float-right"> KIRIM </button><br>
         </form>
-    </div>
-<br>
 </div>
+<br><br>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="./asset/bootstrap-4.4.1-dist/js/bootsrtap.js"></script>

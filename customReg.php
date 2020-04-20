@@ -9,12 +9,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<style>
+    .container{
+        width: 40%;
+        margin-top: 3%;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+        padding: 40px;
+    }
+    button{
+        width: 49%;
+    }
+    a{
+        width: 49%;
+    }
+</style>
 <body>
-<br><br><br><br>
-<div class="container">
 <br>
-    <div class="card mx-auto" style="width:350px">
-        <form action="customReg2.php" method="POST" style="background-color:#edfefd">
+<h1 class="text-center" style="color:white">REGISTER CUSTOMER</h1>
+<div class="container">
+        <form action="customReg2.php" method="POST">
             <div class="form-group">
                 <label for="uname">Nama:</label>
                 <input type="text" class="form-control" id="uname" placeholder="Enter Nama" name="nama">
@@ -32,11 +45,10 @@
                 <label for="uname">Password:</label>
                 <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd">
             </div>
-            <a href="customer.php" class="btn btn-secondary"> BACK </a>
+            <a href="login.php" class="btn btn-secondary"> BACK </a>
             <button type="submit" class="btn btn-primary float-right"> REGISTER </button><br><br>
+            <a href="customLog.php" style="color:white">Sudah Punya Akun?</a>
         </form>
-    </div>
-<br>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

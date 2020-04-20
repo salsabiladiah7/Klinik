@@ -14,9 +14,8 @@
         $_SESSION['user']=$user;
         $_SESSION['pass']=$pass;
         $_SESSION['status']='login';
-        header("location:admin3.php");
-    }
+        echo "<script>alert('LOGIN SUCCESS');location='admin3.php'</script>";    }
     else{
-        header("location:admin1.php");
+        header("location:admin1.php?submit=gagal");
     }
 ?>

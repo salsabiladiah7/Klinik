@@ -12,9 +12,9 @@
         $_SESSION['nama']=$nama;
         $_SESSION['pswd']=$pswd;
         $_SESSION['status']='login';
-        header("location:pesan.php");
+        echo "<script>alert('LOGIN SUCCESS');location='pesan.php'</script>";
     }
     else{
-        header("location:customLog.php");
+        header("location:customLog.php?submit=gagal");
     }
 ?>

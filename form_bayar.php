@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<style>
+    .container{
+        width: 40%;
+        margin-top: 7%;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+        padding: 40px;
+    }
+    button{
+        width: 49%;
+    }
+    a{
+        width: 49%;
+    }
+</style>
 <body>
 <?php
     include 'koneksi.php';
@@ -17,13 +31,11 @@
     $sql="SELECT*FROM pesanan WHERE id_pemesanan='$id'";
     $query=mysqli_query($connect,$sql);
     $row=mysqli_fetch_array($query);
-?>
+?>s
 
 <div class="container">
-<br><br><br><br><br>
 <center><h3 style="color:#edfefd">FORM PEMBAYARAN</h3></center>
-    <div class="card mx-auto" style="width:450px">
-        <form action="bayar.php" method="GET" style="background-color:#edfefd">
+        <form action="bayar.php" method="GET">
             <div class="form-group"><br>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -36,8 +48,6 @@
             <a href="tampil.php" class="btn btn-secondary"> BACK </a>
             <button type="submit" class="btn btn-primary float-right"> KIRIM </button><br><br>
         </form>
-    </div>
-<br>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
